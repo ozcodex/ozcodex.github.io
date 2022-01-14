@@ -1,5 +1,6 @@
 /*Define the basic color palette of site*/
 :root {
+  --cool-gray: #A7AFB2;
   --beau-blue: #C8E0F4;
   --light-cornflower-blue: #9DD1F1;
   --blue-ncs: #508AA8;
@@ -8,7 +9,7 @@
 }
 
 html {
-  background-color: var(--beau-blue) 
+  background-color: var(--cool-gray) 
 }
 
 /*body related styles*/
