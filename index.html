@@ -1,25 +1,31 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="author" content="OzCodex">
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, 
-                     initial-scale=1.0,
-                     maximum-scale=1.0,
-                     user-scalable=no">
-<title>OzCodex VPN</title>
-<link rel="stylesheet" href="/css/style.css">
+<title>OzCodex</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+<script>
+let dest = 'http://10.242.0.1';
+let xhr = new XMLHttpRequest();
+xhr.open('HEAD', urlToFile, false);
+xhr.send();
+if(xhr.status !== 404){
+  window.location.href = dest;
+}
+</script>
 </head>
 <body>
-<header>
-<h1>OzCodex VPN</a></h1>
-<h2>Powered by <a href='https://www.zerotier.com/'>ZeroTier</a></h2>
-</header>
-<p> 
-Lorem Ipsum
-</p>
+<h1>Welcome to OzCodex!</h1>
+<p>This site requieres an active VPN conection to work.</p>
+<p>If you already have the VPN configured, ensure that ZeroTier is running.</p>
+<p>If not, install <a href="https://download.zerotier.com/dist/ZeroTier%20One.msi">ZeroTier</a> and setup the Network.</p>
 
+<p><em>Thank you for visiting OzCodex.</em></p>
 </body>
 </html>
