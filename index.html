@@ -13,7 +13,7 @@
 <script>
 let dest = 'http://10.242.0.1';
 let xhr = new XMLHttpRequest();
-xhr.open('HEAD', urlToFile, false);
+xhr.open('HEAD', dest, false);
 xhr.send();
 if(xhr.status !== 404){
   window.location.replace(dest)
