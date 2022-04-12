@@ -16,7 +16,7 @@ let xhr = new XMLHttpRequest();
 xhr.open('HEAD', urlToFile, false);
 xhr.send();
 if(xhr.status !== 404){
-  window.location.href = dest;
+  window.location.replace(dest)
 }
 </script>
 </head>
